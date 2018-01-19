@@ -17,6 +17,7 @@
 		61247084200DF5FC0047382B /* SignFiterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61247083200DF5FC0047382B /* SignFiterView.xib */; };
 		61247086200DF83C0047382B /* SeleAlerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61247085200DF83C0047382B /* SeleAlerView.swift */; };
 		61247088200DF8630047382B /* SeleAlerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61247087200DF8630047382B /* SeleAlerView.xib */; };
+		613977A72011CA340006AEFC /* W_FiterTransView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613977A62011CA340006AEFC /* W_FiterTransView.swift */; };
 		614ED1EF2005ADA80070A8A0 /* text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ED1EE2005ADA80070A8A0 /* text.swift */; };
 		61623410200454E1000ABBC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6162340F200454E1000ABBC1 /* AppDelegate.swift */; };
 		61623412200454E1000ABBC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61623411200454E1000ABBC1 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 		61247083200DF5FC0047382B /* SignFiterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignFiterView.xib; sourceTree = "<group>"; };
 		61247085200DF83C0047382B /* SeleAlerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleAlerView.swift; sourceTree = "<group>"; };
 		61247087200DF8630047382B /* SeleAlerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeleAlerView.xib; sourceTree = "<group>"; };
+		613977A62011CA340006AEFC /* W_FiterTransView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W_FiterTransView.swift; sourceTree = "<group>"; };
 		614ED1EE2005ADA80070A8A0 /* text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = text.swift; sourceTree = "<group>"; };
 		6162340C200454E1000ABBC1 /* 绘图Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "绘图Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6162340F200454E1000ABBC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			path = FilterDeal;
 			sourceTree = "<group>";
 		};
+		613977A52011CA060006AEFC /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				613977A62011CA340006AEFC /* W_FiterTransView.swift */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
 		61623403200454E1000ABBC1 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 				6162342120046688000ABBC1 /* 22222.jpg */,
 				6162340F200454E1000ABBC1 /* AppDelegate.swift */,
 				61623411200454E1000ABBC1 /* ViewController.swift */,
+				613977A52011CA060006AEFC /* Gif */,
 				61247089200DFBFC0047382B /* UIimage+cag */,
 				6169CB04200735D100577262 /* DrawView.swift */,
 				6124708B200DFC350047382B /* FilterDeal */,
@@ -227,6 +238,7 @@
 				61623412200454E1000ABBC1 /* ViewController.swift in Sources */,
 				61247086200DF83C0047382B /* SeleAlerView.swift in Sources */,
 				614ED1EF2005ADA80070A8A0 /* text.swift in Sources */,
+				613977A72011CA340006AEFC /* W_FiterTransView.swift in Sources */,
 				61623410200454E1000ABBC1 /* AppDelegate.swift in Sources */,
 				61247082200DF5D30047382B /* SignFiterView.swift in Sources */,
 				6124706E200DA1E60047382B /* W_imagefiterView.swift in Sources */,

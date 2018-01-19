@@ -91,7 +91,6 @@ class SignFiterView: UIView {
         DispatchQueue.main.async {
             self.imageV.image = newImage
         }
-        
     }
     
     

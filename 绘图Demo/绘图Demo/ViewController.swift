@@ -22,10 +22,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        imageV.contentMode = .scaleAspectFit
-        
-        
-        
-        
 //        let image1 = UIImage.init(named: "IMG_0888.jpg")
 //        let image2 = UIImage.init(named: "IMG_0888.jpg")
 //        if (image1?.isEqual(image2))! {
@@ -33,7 +29,6 @@ class ViewController: UIViewController {
 //        }
 //        if image1 == image2 {
 //            print("***********")
-//
 //        }
 //        move()
 //        scarFunc()
@@ -45,7 +40,18 @@ class ViewController: UIViewController {
 //        roateImage()
 //        mskImage()
 //        self.view.addSubview(draV)
-        self.view.addSubview(filtView)
+//        self.view.addSubview(filtView)
+        self.view.addSubview(gifView)
+        let oriImage  = UIImage.init(named: "IMG_0888.jpg")!
+        let backImage = UIImage.init(named: "999.jpg")!
+        let model = FileModel.init()
+        model.supName = kCICategoryTransition
+        model.fileName = "CIBarsSwipeTransition"
+        var pardic = [String:Any]()
+        pardic[kCIInputImageKey] = CIImage.init(image: oriImage)
+        pardic[kCIInputTargetImageKey] = CIImage.init(image: backImage)
+        model.parmDic = pardic
+        gifView.starGif(model: model)
     }
  
     //平移
@@ -72,7 +78,6 @@ class ViewController: UIViewController {
         imageV.image = newImg
         let wh = size.width/size.height
         imgHlayout.constant = imgWlayout.constant / wh
-
     }
     
     func imageColor()  {
@@ -164,6 +169,10 @@ class ViewController: UIViewController {
         return v
     }()
     
+    private lazy var gifView : W_FiterTransView = {
+        let v = W_FiterTransView.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_WIDTH))
+        return v
+    }()
     
     
     

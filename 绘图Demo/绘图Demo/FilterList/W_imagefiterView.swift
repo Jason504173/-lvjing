@@ -48,6 +48,7 @@ class W_imagefiterView: UIView ,UICollectionViewDelegate,UICollectionViewDataSou
   
     @IBAction func click(_ sender: Any) {
         remSelf()
+        
     }
     
     @IBOutlet weak var collV: UICollectionView!
