@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="W_imagefiterView" id="uxX-jo-bWF" customClass="W_imagefiterView" customModule="绘图Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UnF-8m-Exf">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VSz-nQ-kBB">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iX-29-kGH">
+                    <rect key="frame" x="18" y="20" width="50" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="F8y-bq-dMt"/>
+                    </constraints>
+                    <state key="normal" title="返回">
+                        <color key="titleColor" red="0.76470588240000004" green="0.59607843140000005" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="click:" destination="uxX-jo-bWF" eventType="touchUpInside" id="c5B-CT-U44"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UnF-8m-Exf" firstAttribute="leading" secondItem="HPT-cJ-3fT" secondAttribute="leading" id="KYP-SV-QwK"/>
+                <constraint firstItem="9iX-29-kGH" firstAttribute="top" secondItem="HPT-cJ-3fT" secondAttribute="top" id="UBY-pg-yQV"/>
+                <constraint firstItem="UnF-8m-Exf" firstAttribute="top" secondItem="9iX-29-kGH" secondAttribute="bottom" id="XOh-0u-4nn"/>
+                <constraint firstItem="9iX-29-kGH" firstAttribute="leading" secondItem="HPT-cJ-3fT" secondAttribute="leading" constant="18" id="bT2-q8-yUy"/>
+                <constraint firstItem="HPT-cJ-3fT" firstAttribute="bottom" secondItem="UnF-8m-Exf" secondAttribute="bottom" id="bwO-A6-zL2"/>
+                <constraint firstItem="UnF-8m-Exf" firstAttribute="top" secondItem="HPT-cJ-3fT" secondAttribute="top" constant="40" id="dCK-Q3-jrm"/>
+                <constraint firstItem="HPT-cJ-3fT" firstAttribute="trailing" secondItem="UnF-8m-Exf" secondAttribute="trailing" id="zfx-rY-XIm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="HPT-cJ-3fT"/>
+            <connections>
+                <outlet property="collV" destination="UnF-8m-Exf" id="a8A-J3-CUL"/>
+            </connections>
+            <point key="canvasLocation" x="-23" y="-37"/>
+        </view>
+    </objects>
+</document>
