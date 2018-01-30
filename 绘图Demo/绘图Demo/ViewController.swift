@@ -40,18 +40,18 @@ class ViewController: UIViewController {
 //        roateImage()
 //        mskImage()
 //        self.view.addSubview(draV)
-//        self.view.addSubview(filtView)
-        self.view.addSubview(gifView)
-        let oriImage  = UIImage.init(named: "IMG_0888.jpg")!
-        let backImage = UIImage.init(named: "999.jpg")!
-        let model = FileModel.init()
-        model.supName = kCICategoryTransition
-        model.fileName = "CIBarsSwipeTransition"
-        var pardic = [String:Any]()
-        pardic[kCIInputImageKey] = CIImage.init(image: oriImage)
-        pardic[kCIInputTargetImageKey] = CIImage.init(image: backImage)
-        model.parmDic = pardic
-        gifView.starGif(model: model)
+        self.view.addSubview(filtView)
+//        self.view.addSubview(gifView)
+//        let oriImage  = UIImage.init(named: "IMG_0888.jpg")!
+//        let backImage = UIImage.init(named: "999.jpg")!
+//        let model = FileModel.init()
+//        model.supName = kCICategoryTransition
+//        model.fileName = "CIBarsSwipeTransition"
+//        var pardic = [String:Any]()
+//        pardic[kCIInputImageKey] = CIImage.init(image: oriImage)
+//        pardic[kCIInputTargetImageKey] = CIImage.init(image: backImage)
+//        model.parmDic = pardic
+//        gifView.starGif(model: model)
     }
  
     //平移
