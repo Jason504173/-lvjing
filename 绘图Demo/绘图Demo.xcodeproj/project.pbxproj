@@ -18,6 +18,15 @@
 		61247086200DF83C0047382B /* SeleAlerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61247085200DF83C0047382B /* SeleAlerView.swift */; };
 		61247088200DF8630047382B /* SeleAlerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61247087200DF8630047382B /* SeleAlerView.xib */; };
 		613977A72011CA340006AEFC /* W_FiterTransView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613977A62011CA340006AEFC /* W_FiterTransView.swift */; };
+		6148A22020411AB700FA7DCC /* SelfMadeFitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148A21F20411AB700FA7DCC /* SelfMadeFitleView.swift */; };
+		6148A22420412D0F00FA7DCC /* OpenBasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148A22220412D0F00FA7DCC /* OpenBasView.swift */; };
+		6148A22520412D0F00FA7DCC /* OpenglHander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148A22320412D0F00FA7DCC /* OpenglHander.swift */; };
+		6148A22820412D9800FA7DCC /* verRend2.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6148A22620412D9800FA7DCC /* verRend2.glsl */; };
+		6148A22920412D9800FA7DCC /* fragRend2.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6148A22720412D9800FA7DCC /* fragRend2.glsl */; };
+		6148A22B20412F5B00FA7DCC /* SelfMadeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148A22A20412F5B00FA7DCC /* SelfMadeListView.swift */; };
+		6148A22D2041300900FA7DCC /* SelfMadeListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148A22C2041300900FA7DCC /* SelfMadeListView.xib */; };
+		6148A23120413C9600FA7DCC /* SelfMadeShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148A23020413C9600FA7DCC /* SelfMadeShowView.swift */; };
+		6148A23320413CAC00FA7DCC /* SelfMadeShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148A23220413CAC00FA7DCC /* SelfMadeShowView.xib */; };
 		614ED1EF2005ADA80070A8A0 /* text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ED1EE2005ADA80070A8A0 /* text.swift */; };
 		61623410200454E1000ABBC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6162340F200454E1000ABBC1 /* AppDelegate.swift */; };
 		61623412200454E1000ABBC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61623411200454E1000ABBC1 /* ViewController.swift */; };
@@ -44,6 +53,15 @@
 		61247085200DF83C0047382B /* SeleAlerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleAlerView.swift; sourceTree = "<group>"; };
 		61247087200DF8630047382B /* SeleAlerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeleAlerView.xib; sourceTree = "<group>"; };
 		613977A62011CA340006AEFC /* W_FiterTransView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W_FiterTransView.swift; sourceTree = "<group>"; };
+		6148A21F20411AB700FA7DCC /* SelfMadeFitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfMadeFitleView.swift; sourceTree = "<group>"; };
+		6148A22220412D0F00FA7DCC /* OpenBasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenBasView.swift; sourceTree = "<group>"; };
+		6148A22320412D0F00FA7DCC /* OpenglHander.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenglHander.swift; sourceTree = "<group>"; };
+		6148A22620412D9800FA7DCC /* verRend2.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = verRend2.glsl; sourceTree = "<group>"; };
+		6148A22720412D9800FA7DCC /* fragRend2.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragRend2.glsl; sourceTree = "<group>"; };
+		6148A22A20412F5B00FA7DCC /* SelfMadeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfMadeListView.swift; sourceTree = "<group>"; };
+		6148A22C2041300900FA7DCC /* SelfMadeListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfMadeListView.xib; sourceTree = "<group>"; };
+		6148A23020413C9600FA7DCC /* SelfMadeShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfMadeShowView.swift; sourceTree = "<group>"; };
+		6148A23220413CAC00FA7DCC /* SelfMadeShowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfMadeShowView.xib; sourceTree = "<group>"; };
 		614ED1EE2005ADA80070A8A0 /* text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = text.swift; sourceTree = "<group>"; };
 		6162340C200454E1000ABBC1 /* 绘图Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "绘图Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6162340F200454E1000ABBC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +130,30 @@
 			path = Gif;
 			sourceTree = "<group>";
 		};
+		6148A21E204119A400FA7DCC /* SelfMadeFitle */ = {
+			isa = PBXGroup;
+			children = (
+				6148A22120412D0F00FA7DCC /* part */,
+				6148A21F20411AB700FA7DCC /* SelfMadeFitleView.swift */,
+				6148A23020413C9600FA7DCC /* SelfMadeShowView.swift */,
+				6148A23220413CAC00FA7DCC /* SelfMadeShowView.xib */,
+				6148A22720412D9800FA7DCC /* fragRend2.glsl */,
+				6148A22620412D9800FA7DCC /* verRend2.glsl */,
+				6148A22A20412F5B00FA7DCC /* SelfMadeListView.swift */,
+				6148A22C2041300900FA7DCC /* SelfMadeListView.xib */,
+			);
+			path = SelfMadeFitle;
+			sourceTree = "<group>";
+		};
+		6148A22120412D0F00FA7DCC /* part */ = {
+			isa = PBXGroup;
+			children = (
+				6148A22220412D0F00FA7DCC /* OpenBasView.swift */,
+				6148A22320412D0F00FA7DCC /* OpenglHander.swift */,
+			);
+			path = part;
+			sourceTree = "<group>";
+		};
 		61623403200454E1000ABBC1 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +183,7 @@
 				6169CB04200735D100577262 /* DrawView.swift */,
 				6124708B200DFC350047382B /* FilterDeal */,
 				6124708A200DFC160047382B /* FilterList */,
+				6148A21E204119A400FA7DCC /* SelfMadeFitle */,
 				61623413200454E1000ABBC1 /* Main.storyboard */,
 				61623416200454E1000ABBC1 /* Assets.xcassets */,
 				61623418200454E1000ABBC1 /* LaunchScreen.storyboard */,
@@ -214,10 +257,14 @@
 				61247084200DF5FC0047382B /* SignFiterView.xib in Resources */,
 				6162341A200454E1000ABBC1 /* LaunchScreen.storyboard in Resources */,
 				61247080200DF0720047382B /* FilerCatListView.xib in Resources */,
+				6148A22920412D9800FA7DCC /* fragRend2.glsl in Resources */,
+				6148A22820412D9800FA7DCC /* verRend2.glsl in Resources */,
 				61623417200454E1000ABBC1 /* Assets.xcassets in Resources */,
 				61247072200DA22E0047382B /* FitImgCell.xib in Resources */,
+				6148A23320413CAC00FA7DCC /* SelfMadeShowView.xib in Resources */,
 				6162342220046688000ABBC1 /* 22222.jpg in Resources */,
 				61247088200DF8630047382B /* SeleAlerView.xib in Resources */,
+				6148A22D2041300900FA7DCC /* SelfMadeListView.xib in Resources */,
 				61623415200454E1000ABBC1 /* Main.storyboard in Resources */,
 				61247074200DA2B40047382B /* W_imagefiterView.xib in Resources */,
 			);
@@ -233,14 +280,19 @@
 				6124707E200DF0650047382B /* FilerCatListView.swift in Sources */,
 				61623424200495E0000ABBC1 /* UIimage_add.swift in Sources */,
 				617567B4200C9D41000716DF /* UIimage+Filter.swift in Sources */,
+				6148A22420412D0F00FA7DCC /* OpenBasView.swift in Sources */,
 				6169CB05200735D100577262 /* DrawView.swift in Sources */,
 				61247071200DA22E0047382B /* FitImgCell.swift in Sources */,
 				61623412200454E1000ABBC1 /* ViewController.swift in Sources */,
 				61247086200DF83C0047382B /* SeleAlerView.swift in Sources */,
+				6148A23120413C9600FA7DCC /* SelfMadeShowView.swift in Sources */,
+				6148A22520412D0F00FA7DCC /* OpenglHander.swift in Sources */,
+				6148A22B20412F5B00FA7DCC /* SelfMadeListView.swift in Sources */,
 				614ED1EF2005ADA80070A8A0 /* text.swift in Sources */,
 				613977A72011CA340006AEFC /* W_FiterTransView.swift in Sources */,
 				61623410200454E1000ABBC1 /* AppDelegate.swift in Sources */,
 				61247082200DF5D30047382B /* SignFiterView.swift in Sources */,
+				6148A22020411AB700FA7DCC /* SelfMadeFitleView.swift in Sources */,
 				6124706E200DA1E60047382B /* W_imagefiterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,7 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MEF67234BJ;
 				INFOPLIST_FILE = "绘图Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hiniu.cn.--Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,7 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MEF67234BJ;
 				INFOPLIST_FILE = "绘图Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hiniu.cn.--Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";

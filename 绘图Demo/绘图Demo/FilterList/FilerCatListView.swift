@@ -23,13 +23,7 @@ class FilerCatListView: UIView ,UITableViewDelegate,UITableViewDataSource{
                                        kCICategoryStylize,
                                        kCICategorySharpen,
                                        kCICategoryBlur,
-                                       kCICategoryVideo,
-                                       kCICategoryStillImage,
-                                       kCICategoryInterlaced,
-                                       kCICategoryNonSquarePixels,
-                                       kCICategoryHighDynamicRange,
-                                       kCICategoryBuiltIn,
-                                       kCICategoryFilterGenerator]
+                                       "自定义"]
     
     @IBOutlet weak var tableView: UITableView!
     override func awakeFromNib() {
@@ -52,6 +46,11 @@ class FilerCatListView: UIView ,UITableViewDelegate,UITableViewDataSource{
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == dataArry.count - 1 {
+            self.addSubview(selfMadListView)
+            return
+        }
+        
         let type = dataArry[indexPath.row]
         filtView.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
         filtView.getData(type: type)
@@ -64,6 +63,14 @@ class FilerCatListView: UIView ,UITableViewDelegate,UITableViewDataSource{
         v.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
         return v
     }()
+    
+    private lazy var selfMadListView : SelfMadeListView = {
+        let v = Bundle.main.loadNibNamed("SelfMadeListView", owner: self, options: nil)?.first as! SelfMadeListView
+        v.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
+        return v
+        
+    }()
+    
 }
 
 /*

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yh0-32-dqU" customClass="SelfMadeShowView" customModule="绘图Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BbU-Ab-QiL">
+                    <rect key="frame" x="18" y="617" width="339" height="31"/>
+                    <connections>
+                        <action selector="slideChanger:" destination="yh0-32-dqU" eventType="valueChanged" id="jaj-dp-MUA"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nBv-wb-ry0" firstAttribute="trailing" secondItem="BbU-Ab-QiL" secondAttribute="trailing" constant="20" id="QWH-Wp-ttS"/>
+                <constraint firstItem="nBv-wb-ry0" firstAttribute="bottom" secondItem="BbU-Ab-QiL" secondAttribute="bottom" constant="20" id="UKa-6c-YX3"/>
+                <constraint firstItem="BbU-Ab-QiL" firstAttribute="leading" secondItem="nBv-wb-ry0" secondAttribute="leading" constant="20" id="fdA-5t-JMa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="nBv-wb-ry0"/>
+            <connections>
+                <outlet property="sliderV" destination="BbU-Ab-QiL" id="hkx-fa-yo0"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="60"/>
+        </view>
+    </objects>
+</document>

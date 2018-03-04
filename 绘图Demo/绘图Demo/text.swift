@@ -15,6 +15,20 @@ func WLog<T>(_ message:T,file:String = #file,function :String = #function , line
     let fileName = (file as NSString).lastPathComponent
     print("\(fileName): \(function) \(line) | \(message)")
 }
+
+func BUFFER_OFFSET(n:Int) -> UnsafeRawPointer? {
+    return UnsafeRawPointer.init(bitPattern: n)
+}
+
+extension Array {
+    func size() -> Int {
+        if self.count > 0 {
+            return self.count * MemoryLayout.size(ofValue: self[0])
+        }
+        return 0;
+    }
+}
+
 /*
  主要看此文章
  http://www.cocoachina.com/ios/20170227/18784.html

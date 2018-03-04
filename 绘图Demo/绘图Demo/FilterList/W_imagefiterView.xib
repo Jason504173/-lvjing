@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UnF-8m-Exf">
-                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <rect key="frame" x="0.0" y="80" width="375" height="587"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VSz-nQ-kBB">
                         <size key="itemSize" width="50" height="50"/>
@@ -27,8 +27,9 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iX-29-kGH">
-                    <rect key="frame" x="18" y="20" width="50" height="40"/>
+                    <rect key="frame" x="18" y="40" width="50" height="40"/>
                     <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9SQ-mB-zMx"/>
                         <constraint firstAttribute="width" constant="50" id="F8y-bq-dMt"/>
                     </constraints>
                     <state key="normal" title="返回">
@@ -41,12 +42,12 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="UnF-8m-Exf" firstAttribute="top" secondItem="9iX-29-kGH" secondAttribute="bottom" id="E6u-lh-hm9"/>
                 <constraint firstItem="UnF-8m-Exf" firstAttribute="leading" secondItem="HPT-cJ-3fT" secondAttribute="leading" id="KYP-SV-QwK"/>
-                <constraint firstItem="9iX-29-kGH" firstAttribute="top" secondItem="HPT-cJ-3fT" secondAttribute="top" id="UBY-pg-yQV"/>
+                <constraint firstItem="9iX-29-kGH" firstAttribute="top" secondItem="HPT-cJ-3fT" secondAttribute="top" constant="20" id="UBY-pg-yQV"/>
                 <constraint firstItem="UnF-8m-Exf" firstAttribute="top" secondItem="9iX-29-kGH" secondAttribute="bottom" id="XOh-0u-4nn"/>
                 <constraint firstItem="9iX-29-kGH" firstAttribute="leading" secondItem="HPT-cJ-3fT" secondAttribute="leading" constant="18" id="bT2-q8-yUy"/>
                 <constraint firstItem="HPT-cJ-3fT" firstAttribute="bottom" secondItem="UnF-8m-Exf" secondAttribute="bottom" id="bwO-A6-zL2"/>
-                <constraint firstItem="UnF-8m-Exf" firstAttribute="top" secondItem="HPT-cJ-3fT" secondAttribute="top" constant="40" id="dCK-Q3-jrm"/>
                 <constraint firstItem="HPT-cJ-3fT" firstAttribute="trailing" secondItem="UnF-8m-Exf" secondAttribute="trailing" id="zfx-rY-XIm"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="HPT-cJ-3fT"/>

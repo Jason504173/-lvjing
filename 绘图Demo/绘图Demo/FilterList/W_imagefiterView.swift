@@ -158,9 +158,14 @@ class W_imagefiterView: UIView ,UICollectionViewDelegate,UICollectionViewDataSou
         
         if fileName == "CIBarcodeGenerator" {
             let data = "kkk".data(using: .utf8)
-            let des =  CIAztecCodeDescriptor.init(payload: data!, isCompact: true, layerCount: 3, dataCodewordCount: 3)
-            pardic["inputBarcodeDescriptor"] = des!
-        }        
+            if #available(iOS 11.0, *) {
+                let des =  CIAztecCodeDescriptor.init(payload: data!, isCompact: true, layerCount: 3, dataCodewordCount: 3)
+                pardic["inputBarcodeDescriptor"] = des!
+
+            } else {
+                // Fallback on earlier versions
+            }
+        }
         return pardic
     }
     
@@ -188,7 +193,9 @@ class W_imagefiterView: UIView ,UICollectionViewDelegate,UICollectionViewDataSou
     private lazy var signV : SignFiterView = {
         let v = Bundle.main.loadNibNamed("SignFiterView", owner: self, options: nil)?.first as! SignFiterView
         v.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
-        return v    }()
+        return v
+        
+    }()
 }
 
 
